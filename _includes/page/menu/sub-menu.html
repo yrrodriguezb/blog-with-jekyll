@@ -1,0 +1,15 @@
+<li>
+  <a>{{ include.name  }}</a>
+
+  <ul>
+  {% for submenu in include.menu %}
+    <li>
+      <a {% if submenu.url %} href="{{ submenu.url }}" {% endif %}>{{ submenu.name }}</a>
+
+      {% if submenu.submenu %}
+        {% include page/menu/sub-menu.html name=submenu.name menu=submenu.submenu %}
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</li>

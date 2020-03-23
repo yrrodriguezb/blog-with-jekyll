@@ -1,0 +1,22 @@
+<!-- START MENU -->
+<aside class="menu is-hidden-mobile">
+  {% for menu in include.menu %}
+    {% if  menu.root %}
+      <p class="menu-label">{{ menu.name }}</p>
+    {% endif %}
+
+    {% if menu.submenu %}
+      <ul class="menu-list">
+        {% for submenu in menu.submenu %}
+          {% if submenu.submenu %}
+            {% include page/menu/sub-menu.html name=submenu.name menu=submenu.submenu %}
+          {% else %}
+            <li><a {% if submenu.url %} href="{{ submenu.url }}" {% endif %}>{{ submenu.name }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+
+</aside>
+<!-- END MENU -->
