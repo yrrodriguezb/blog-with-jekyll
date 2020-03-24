@@ -11,7 +11,7 @@
           {% if submenu.submenu %}
             {% include page/menu/sub-menu.html name=submenu.name menu=submenu.submenu %}
           {% else %}
-            <li><a {% if submenu.url %} href="{{ submenu.url }}" {% endif %}>{{ submenu.name }}</a></li>
+            <li><a {% if submenu.url %} href="{{ site.url }}{{ site.baseurl }}{{ submenu.url }}" {% endif %}>{{ submenu.name }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>

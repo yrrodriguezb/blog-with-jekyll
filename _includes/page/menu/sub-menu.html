@@ -4,7 +4,7 @@
   <ul>
   {% for submenu in include.menu %}
     <li>
-      <a {% if submenu.url %} href="{{ submenu.url }}" {% endif %}>{{ submenu.name }}</a>
+      <a {% if submenu.url %} href="{{ site.url }}{{ site.baseurl }}{{ submenu.url }}" {% endif %}>{{ submenu.name }}</a>
 
       {% if submenu.submenu %}
         {% include page/menu/sub-menu.html name=submenu.name menu=submenu.submenu %}
