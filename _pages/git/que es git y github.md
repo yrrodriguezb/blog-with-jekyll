@@ -17,9 +17,9 @@ Algunas de las características más importantes de Git son:
 * Gestión eficiente de proyectos grandes.
 * Realmacenamiento periódico en paquetes.
 
-![Drag Racing](../../assets/images/gif/git.gif)
+![Drag Racing](../../assets/images/gif/git/git.gif)
 
 
 **[Github](https://github.com)** es un servicio para alojamiento de repositorios de software gestionados por el sistema de control de versiones Git. Por tanto, Git es algo más general que nos sirve para controlar el estado de un desarrollo a lo largo del tiempo, mientras que Github es algo más particular: un sitio web que usa Git para ofrecer a la comunidad de desarrolladores repositorios de software. En definitiva, Github es un sitio web pensado para hacer posible el compartir el código de una manera más fácil y al mismo tiempo darle popularidad a la herramienta de control de versiones en sí, que es Git.
 
-![Drag Racing](../../assets/images/gif/github.gif)
+![Drag Racing](../../assets/images/gif/git/github.gif)

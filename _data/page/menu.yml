@@ -10,7 +10,7 @@
       url: /#
       submenu:
         - name: git init
-          url: /#
+          url: /git/comandos/git-init
         - name: git clone
           url: /#
         - name: git add
