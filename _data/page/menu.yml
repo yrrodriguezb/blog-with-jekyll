@@ -18,11 +18,11 @@
         - name: git add
           url: /git/comandos/git-add/
         - name: git commit
-          url: /#
+          url: /git/comandos/git-commit/
         - name: git log
-          url: /#
+          url: /git/comandos/git-log/
         - name: git push
-          url: /#
+          url: /git/comandos/git-push/
         - name: git fetch
           url: /#
         - name: git merge

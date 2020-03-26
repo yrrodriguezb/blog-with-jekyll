@@ -6,12 +6,12 @@ title: Comando - git add
 
 Este comando actualiza el índice utilizando el contenido actual que se encuentra en el árbol de trabajo, para preparar el contenido organizado para la próxima confirmación. Por lo general, agrega el contenido actual de las rutas existentes en su conjunto, pero con algunas opciones también se puede usar para agregar contenido con solo una parte de los cambios realizados en los archivos del árbol de trabajo aplicados, o eliminar rutas que no existen en el árbol de trabajo nunca más.
 
-Para el ejemplo de este comando debemos seguiremos trabajando con el archivo creado anteriormente en el articulo del comando **[git-status](../git-status)**.
+Para el ejemplo de este comando seguiremos trabajando con el archivo **.gitignore** creado anteriormente en el articulo del comando **[git-status](../git-status)**.
 
 ``` bash
 #!/usr/bin/bash
 
-git add
+git add .gitignore
 ```
 
 Debe tener en cuenta que este comando tiene opciones, algunas de estas son:

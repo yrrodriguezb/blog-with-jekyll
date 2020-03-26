@@ -8,7 +8,7 @@ Muestra rutas que tienen diferencias entre el archivo de índice y la confirmaci
 
 Los primeros son lo que podría comprometer mediante la ejecución git commit; el segundo y el tercero son lo que podría cometer ejecutando git add antes de ejecutarlo git commit.
 
-Para el ejemplo de este comando debemos tener previamnete un archivo ya creado, para este caso el archivo creado es el ".gitignore".
+Para el ejemplo de este comando debemos tener previamnete un archivo ya creado, para este caso el archivo creado es el **.gitignore**.
 
 Una vez creado este archivo ejecutaremos el siguientes comando:
 
