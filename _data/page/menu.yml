@@ -10,11 +10,13 @@
       url: /#
       submenu:
         - name: git init
-          url: /git/comandos/git-init
+          url: /git/comandos/git-init/
         - name: git clone
           url: /#
+        - name: git status
+          url: /git/comandos/git-status/
         - name: git add
-          url: /#
+          url: /git/comandos/git-add/
         - name: git commit
           url: /#
         - name: git log
