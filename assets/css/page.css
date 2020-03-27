@@ -84,3 +84,27 @@ nav.navbar {
   max-height: 250px;
   overflow-y: scroll;
 }
+
+/* Markdown */
+
+.highlight pre code span.c,
+.highlight pre code span.c1 {
+  color: #039233;
+}
+
+.highlight pre code span.nb {
+  color: #9f00fc;
+}
+
+.highlight pre code span.s2, 
+.highlight pre code span.k {
+  color: #00adfd;
+}
+
+.highlight pre code span.nt {
+  color: #aa001c;
+}
+
+.highlight pre code span.o {
+  color: #740f4d;
+}

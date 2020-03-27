@@ -24,7 +24,7 @@ Debe tener en cuenta que este comando tiene opciones, algunas de estas son:
 #!/usr/bin/bash
 
 # Da la salida en formato corto.
-git status - s, --short
+git status -s, --short
 
 # Da la salida en formato largo. Este es el valor predeterminado.
 git status --long

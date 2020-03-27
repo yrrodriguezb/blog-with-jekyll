@@ -12,8 +12,10 @@ Para este ejemplo crearemos una carpeta llamada **repo** y dentro de ella inicia
 #!/usr/bin/bash
 
 mkdir repo && cd repo
+
 git init
 ```
+
 #### Ejecucion en una terminal:    
 
 ![Drag Racing](../../../assets/images/gif/git/comandos/git-init.gif)

@@ -2,7 +2,9 @@
 <nav class="navbar is-fixed-top is-white ">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item brand-text" href="{{ site.url }}{{ site.baseurl }}/">
+      <a 
+        class="navbar-item brand-text {% if page.url == '/' %}is-active {% endif %}" 
+        href="{{ site.url }}{{ site.baseurl }}/">
         Blog 
       </a>
 
