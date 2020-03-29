@@ -8,18 +8,22 @@ Almacena el contenido actual del índice en una nueva confirmación junto con un
 
 El contenido que se agregará se puede especificar de varias maneras:
 
-1. Mediante el uso de **[git add](./git-add.md)** para "agregar" incrementalmente los cambios al índice antes de usar el comando commit.
+1. Mediante el uso de **[git add](../git-add)** para "agregar" incrementalmente los cambios al índice antes de usar el comando commit.
 
-2. Usando **[git rm](./git-rm.md)** para eliminar archivos del árbol de trabajo y el índice.
+2. Usando **[git rm](../git-rm)** para eliminar archivos del árbol de trabajo y el índice.
 
 3. Utilizando el modificador -a con el comando commit para "agregar" automáticamente los cambios de todos los archivos conocidos (es decir, todos los archivos que ya figuran en el índice).
 
-Para el ejemplo de este comando seguiremos trabajando con el archivo **.gitignore** creado anteriormente en el articulo del comando **[git-status](../git-status)**.
+Para el ejemplo de este comando seguiremos trabajando con el archivo **.gitignore** creado anteriormente en el articulo del comando **[git-status](../git-status)**. Ademas crearemos otro archivo llamado **README.md**, el cual es utilizado para describir los requerimientos, dependencias, caracteristicas, etc del repositorio. 
 
 ``` bash
 #!/usr/bin/bash
 
-git commit -m "Se agrega archivo .gitignore"
+echo "# Repo" >> README.md
+git status
+
+git add -A
+git commit -m "Commit Initial"
 ```
 
 Debe tener en cuenta que este comando tiene opciones, algunas de estas son:
@@ -35,5 +39,7 @@ git commit -a, --all
 git commit -m, --message
 ```
 
+&nbsp;
 #### Ejecución en una terminal:    
 
+![Drag Racing](../../../assets/images/gif/git/comandos/git-commit.gif)

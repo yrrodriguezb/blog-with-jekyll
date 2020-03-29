@@ -25,4 +25,5 @@ git log --follow
 git log --oneline
 ```
 
+&nbsp;
 #### Ejecución en una terminal:    

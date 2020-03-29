@@ -2,7 +2,6 @@
 layout: page
 permalink: /git/comandos/git-add/
 title: Comando - git add
-subtitle: git add
 ---
 
 Este comando actualiza el índice utilizando el contenido actual que se encuentra en el árbol de trabajo, para preparar el contenido organizado para la próxima confirmación. Por lo general, agrega el contenido actual de las rutas existentes en su conjunto, pero con algunas opciones también se puede usar para agregar contenido con solo una parte de los cambios realizados en los archivos del árbol de trabajo aplicados, o eliminar rutas que no existen en el árbol de trabajo nunca más.
@@ -36,6 +35,7 @@ git add -f, --force
 git add -i, --interactive
 ```
 
+&nbsp;
 #### Ejecucion en una terminal:    
 
 ![Drag Racing](../../../assets/images/gif/git/comandos/git-add.gif)

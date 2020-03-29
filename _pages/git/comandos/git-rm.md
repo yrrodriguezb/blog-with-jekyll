@@ -26,4 +26,5 @@ git rm -r
 git rm folder/\*.txt
 ```
 
+&nbsp;
 #### Ejecucion en una terminal:  

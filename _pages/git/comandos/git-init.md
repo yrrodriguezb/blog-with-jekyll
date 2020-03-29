@@ -16,6 +16,7 @@ mkdir repo && cd repo
 git init
 ```
 
+&nbsp;
 #### Ejecucion en una terminal:    
 
 ![Drag Racing](../../../assets/images/gif/git/comandos/git-init.gif)

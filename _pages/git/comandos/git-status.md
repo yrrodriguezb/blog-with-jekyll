@@ -6,9 +6,15 @@ title: Comando - git status
 
 Muestra rutas que tienen diferencias entre el archivo de índice y la confirmación HEAD actual, rutas que tienen diferencias entre el árbol de trabajo y el archivo de índice, y rutas en el árbol de trabajo que Git no rastrea (y gitignore no ignora).
 
-Los primeros son lo que podría comprometer mediante la ejecución git commit; el segundo y el tercero son lo que podría cometer ejecutando git add antes de ejecutarlo git commit.
+Los primeros son lo que podría comprometer mediante la ejecución **[git commit](../git-commit)**; el segundo y el tercero son lo que podría cometer ejecutando **[git add](../git-add)** antes de ejecutar **[git commit](../git-commit)**.
 
-Para el ejemplo de este comando debemos tener previamnete un archivo ya creado, para este caso el archivo creado es el **.gitignore**.
+Para el ejemplo de este comando debemos tener previamente un archivo ya creado, para este caso el archivo creado es el **.gitignore**. 
+
+``` bash
+#!/usr/bin/bash
+
+touch .gitignore
+```
 
 Una vez creado este archivo ejecutaremos el siguientes comando:
 
@@ -33,6 +39,7 @@ git status --long
 git status -b, --branch
 ```
 
+&nbsp;
 #### Ejecucion en una terminal:    
 
 ![Drag Racing](../../../assets/images/gif/git/comandos/git-status.gif)

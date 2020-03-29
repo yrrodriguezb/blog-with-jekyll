@@ -12,7 +12,7 @@
         - name: git init
           url: /git/comandos/git-init/
         - name: git clone
-          url: /#
+          url: /git/comandos/git-clone/
         - name: git status
           url: /git/comandos/git-status/
         - name: git add
