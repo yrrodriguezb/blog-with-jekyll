@@ -39,5 +39,5 @@ Asegurate de estar en el directorio que contiene la carpeta llamada **repo**, en
 
     ![Drag Racing](../../../assets/images/gif/git/pasos/clonar-repo/3.gif)
 
-    Listo, ya tenemos clonado nuestro repositorio en nuestro equipo.
+    Listo, ya tenemos clonado el repositorio en nuestro equipo.
 &nbsp;

@@ -26,4 +26,6 @@ git log --oneline
 ```
 
 &nbsp;
-#### Ejecución en una terminal:    
+#### Ejecución en una terminal:   
+
+![Drag Racing](../../../assets/images/gif/git/comandos/git-log.gif)
