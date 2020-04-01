@@ -7,7 +7,6 @@
       url: /git/como-crear-un-repositorio-en-github/
     - name: Commandos básicos de git
       root: true
-      url: /#
       submenu:
         - name: git init
           url: /git/comandos/git-init/
@@ -24,8 +23,8 @@
         - name: git push
           url: /git/comandos/git-push/
         - name: git fetch
-          url: /#
+          url: /git/comandos/git-fetch/
         - name: git merge
-          url: /#
+          url: /git/comandos/git-merge/
         - name: git pull
-          url: /#
+          url: /git/comandos/git-pull/

@@ -105,21 +105,25 @@ nav.navbar.is-elevation {
 .highlight pre code span.c1 {
   color: #039233;
 }
-
 .highlight pre code span.nb {
   color: #9f00fc;
 }
-
 .highlight pre code span.s2, 
 .highlight pre code span.k {
   color: #00adfd;
 }
-
 .highlight pre code span.nt {
   color: #aa001c;
 }
-
 .highlight pre code span.o {
   color: #740f4d;
 }
+.highlight pre code span.kd {
+  color: #3363c4;
+}
+.highlight pre code span.na, 
+.highlight pre code span.nx {
+  color: #246d9e;
+}
+
 /* ===============> Markdown */

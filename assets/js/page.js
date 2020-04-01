@@ -2,13 +2,15 @@ var page = {
   controls: {
     btn_go_up: null,
     navMenu: null,
-    navbar_burgers: null
+    navbar_burgers: null,
+    intervalId: null
   },
   events: {
     refsControls: function () {
       page.controls.btn_go_up = document.getElementById("btn-go-up");
       page.controls.navMenu = document.getElementById("navMenu");
       page.controls.navbar_burgers = document.querySelectorAll('.navbar-burger');
+      page.controls.intervalId = 0;
     },
     refsEvents: function () {
       page.controls.btn_go_up.onclick = page.methods.go_up;
@@ -17,30 +19,17 @@ var page = {
     }
   },
   pollyfills: {
-    easeInOutQuad: function () {
-      Math.easeInOutQuad = function (t, b, c, d) {
-        t /= d/2;
-        if (t < 1) return c/2*t*t + b;
-        t--;
-        return -c/2 * (t*(t-2) - 1) + b;
-      };
-    },
     forEach: function () {
-      /* if (!Array.prototype.forEach) {
+      if (!Array.prototype.forEach) {
         Array.prototype.forEach = function(callback) {
           for (var i = 0; i < this.length; i++) {
             callback(this[i], i, this)
           }
         }
-      } */
+      }
 
       if (window.NodeList && !NodeList.prototype.forEach) {
-        NodeList.prototype.forEach = function (callback, thisArg) {
-          thisArg = thisArg || window;
-          for (var i = 0; i < this.length; i++) {
-            callback.call(thisArg, this[i], i, this);
-          }
-         };
+        NodeList.prototype.forEach = Array.prototype.forEach;
       }
     },
     querySelectorAll: function () {
@@ -63,24 +52,27 @@ var page = {
       }
     },
     load: function () {
-      page.pollyfills.easeInOutQuad();
       page.pollyfills.forEach();
       page.pollyfills.querySelectorAll();
     }
   },
   methods: {
     go_up: function () {
-      page.methods.scrollTo();   
+      intervalId = setInterval(page.methods.scrollTo, 16.66);
     },
     onscroll: function () {
-      if (window.scrollY > 100) {
-        page.controls.btn_go_up.style.display = "inline";
-      } else {
-        page.controls.btn_go_up.style.display = "none";
-      }
+      var scrollY = window.scrollY || window.pageYOffset
+      var show = scrollY > 100;
+
+      page.controls.btn_go_up.style.display = show ? "inline" : "none";
     },
     scrollTo: function () {
-      window.scrollTo(0, 0);
+      var scrollY = window.scrollY || window.pageYOffset;
+
+      if (scrollY === 0)
+        clearInterval(intervalId);
+
+      window.scroll(0, scrollY - 100);
     },
     burgerIsActive: function () {
       var burgers = page.controls.navbar_burgers;
@@ -88,12 +80,11 @@ var page = {
       if (burgers.length > 0) {
         burgers.forEach(function (el) {
           el.onclick = (function () {
-            var target = el.dataset ? el.dataset.target : undefined;
-            var $target = target ? document.getElementById(target) : page.controls.navMenu;
+            var $target = page.controls.navMenu;
 
             if (el.className.indexOf("is-active") > -1) {
-              el.className = el.className.replace("is-active", "");
-              $target.className = $target.className.replace("is-active", "");
+              el.className = el.className.replace(" is-active", "");
+              $target.className = $target.className.replace(" is-active", "");
             } else {
               el.className += " is-active";
               $target.className += " is-active";
