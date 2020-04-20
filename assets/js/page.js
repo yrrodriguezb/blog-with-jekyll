@@ -58,7 +58,7 @@ var page = {
   },
   methods: {
     go_up: function () {
-      intervalId = setInterval(page.methods.scrollTo, 16.66);
+      page.controls.intervalId = setInterval(page.methods.scrollTo, 16.66);
     },
     onscroll: function () {
       var scrollY = window.scrollY || window.pageYOffset
@@ -70,7 +70,7 @@ var page = {
       var scrollY = window.scrollY || window.pageYOffset;
 
       if (scrollY === 0)
-        clearInterval(intervalId);
+        clearInterval(page.controls.intervalId);
 
       window.scroll(0, scrollY - 100);
     },
